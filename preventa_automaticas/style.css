@@ -1,0 +1,493 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+body {
+    background-color: transparent;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    perspective: 1400px;
+    transform-style: preserve-3d;
+}
+.robo-shadow {
+    position: absolute;
+    left: 255px;
+    top: 293px;
+}
+.right-hand {
+    position: absolute;
+    transform-origin: 116.194px 29.5833px 0px;
+    transform-style: preserve-3d;
+    left: 120px;
+    top: 113px;
+    transform: translate3d(-21px, 3px, 0px) rotateZ(-61.5579deg);
+}
+.left-hand {
+    position: absolute;
+    transform-origin: 25.9444px -0.277778px 0px;
+    transform: translate3d(-24px, 0px, 0px);
+    left: 379px;
+    top: 138px;
+}
+.robo {
+    position: absolute;
+    pointer-events: auto;
+    left: 197px;
+    top: 0px;
+}
+.coin {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 58px;
+    visibility: visible;
+    opacity: 0;
+    height: 73px;
+    overflow: hidden;
+    pointer-events: auto;
+    transform: scale3d(0.14, 0.14, 0.14);
+    left: 70px;
+    top: 109px;
+}
+.piggy-bank {
+    position: absolute;
+    left: 0px;
+    top: 160px;
+}
+.object-div-11uq .robo-animation {
+    animation: robo-animation-keyframes 5.5s linear 0s infinite normal forwards;
+}
+@keyframes robo-animation-keyframes {
+    0% {
+        transform: rotateZ(0deg);
+        transform-origin: 102.875px 166.515px 0px;
+        animation-timing-function: ease-in-out;
+    }
+    9.0909% {
+        transform: rotateZ(0deg);
+        transform-origin: 102.875px 166.515px 0px;
+        animation-timing-function: ease-in-out;
+    }
+    21.8182% {
+        transform: rotateZ(-6.65791deg);
+        transform-origin: 102.875px 166.515px 0px;
+        animation-timing-function: ease-in-out;
+    }
+    29.0909% {
+        transform: rotateZ(-6.65791deg);
+        transform-origin: 102.875px 166.515px 0px;
+        animation-timing-function: ease-in-out;
+    }
+    34.5455% {
+        transform: rotateZ(0deg);
+        transform-origin: 102.875px 166.515px 0px;
+        animation-timing-function: ease-in-out;
+    }
+    50.9091% {
+        transform: rotateZ(0deg);
+        transform-origin: 97.9822px 326.728px 0px;
+        animation-timing-function: ease-in-out;
+    }
+    61.8182% {
+        transform: rotateZ(6.35002deg);
+        transform-origin: 97.9822px 326.728px 0px;
+        animation-timing-function: ease-in-out;
+    }
+    72.7273% {
+        transform: rotateZ(6.35002deg);
+        transform-origin: 97.9822px 326.728px 0px;
+        animation-timing-function: ease-in-out;
+    }
+    79.0909% {
+        transform: rotateZ(0deg);
+        transform-origin: 97.9822px 326.728px 0px;
+        animation-timing-function: linear;
+    }
+    100% {
+        transform: rotateZ(0deg);
+        transform-origin: 97.9822px 326.728px 0px;
+        animation-timing-function: linear;
+    }
+}
+@keyframes left-hand-animation-keyframes {
+    0% {
+        transform-origin: 25.9444px -0.277778px 0px;
+        transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+        animation-timing-function: ease-in-out;
+    }
+    9.0909% {
+        transform-origin: 24.5556px -0.277778px 0px;
+        transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+        animation-timing-function: ease-in-out;
+    }
+    21.8182% {
+        transform-origin: 25.25px -0.972222px 0px;
+        transform: translate3d(-24px, -42px, 0px) rotateZ(-23.1931deg);
+        animation-timing-function: ease-in-out;
+    }
+    29.0909% {
+        transform-origin: 25.25px -0.972222px 0px;
+        transform: translate3d(-24px, -42px, 0px) rotateZ(-23.1931deg);
+        animation-timing-function: ease-in-out;
+    }
+    34.5455% {
+        transform-origin: 24.5556px -0.277778px 0px;
+        transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+        animation-timing-function: ease-in-out;
+    }
+    39.0909% {
+        transform-origin: 24.5556px -0.277778px 0px;
+        transform: translate3d(0px, 0px, 0px) rotateZ(-3.27646deg);
+        animation-timing-function: ease-in-out;
+    }
+    44.5455% {
+        transform-origin: 24.5556px -0.277778px 0px;
+        transform: translate3d(0px, 0px, 0px) rotateZ(4.31923deg);
+        animation-timing-function: ease-in-out;
+    }
+    50.9091% {
+        transform-origin: 24.5556px -0.277778px 0px;
+        transform: translate3d(0px, 0px, 0px) rotateZ(-2.24119deg);
+        animation-timing-function: ease-in-out;
+    }
+    61.8182% {
+        transform-origin: 24.5556px -0.277778px 0px;
+        transform: translate3d(15px, 18px, 0px) rotateZ(-16.5207deg);
+        animation-timing-function: ease-in-out;
+    }
+    72.7273% {
+        transform-origin: 24.5556px -0.277778px 0px;
+        transform: translate3d(15px, 18px, 0px) rotateZ(-16.5207deg);
+        animation-timing-function: ease-in-out;
+    }
+    79.0909% {
+        transform-origin: 25.9444px -0.277778px 0px;
+        transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+        animation-timing-function: ease-in-out;
+    }
+    83.8182% {
+        transform-origin: 25.9444px -0.277778px 0px;
+        transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+        animation-timing-function: linear;
+    }
+    100% {
+        transform-origin: 25.9444px -0.277778px 0px;
+        transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+        animation-timing-function: linear;
+    }
+}
+.object-div-11uq .left-hand-animation {
+    animation: left-hand-animation-keyframes 5.5s linear 0s infinite normal forwards;
+}
+@keyframes right-hand-animation-keyframes {
+    0% {
+        transform: translate3d(-21px, 3px, 0px) rotateZ(-61.5579deg);
+        animation-timing-function: ease-in-out;
+    }
+    9.0909% {
+        transform: translate3d(-21px, 3px, 0px) rotateZ(-61.5579deg);
+        animation-timing-function: ease-in-out;
+    }
+    21.8182% {
+        transform: translate3d(-21px, 3px, 0px) rotateZ(1.63861deg);
+        animation-timing-function: ease-in-out;
+    }
+    29.0909% {
+        transform: translate3d(-21px, 3px, 0px) rotateZ(1.63861deg);
+        animation-timing-function: ease-in-out;
+    }
+    34.5455% {
+        transform: translate3d(-21px, 3px, 0px) rotateZ(-40.4211deg);
+        animation-timing-function: ease-in-out;
+    }
+    39.0909% {
+        transform: translate3d(-21px, 3px, 0px) rotateZ(-46.8797deg);
+        animation-timing-function: ease-in-out;
+    }
+    44.5455% {
+        transform: translate3d(-21px, 3px, 0px) rotateZ(-40.4211deg);
+        animation-timing-function: ease-in-out;
+    }
+    50.9091% {
+        transform: translate3d(-23px, 1px, 0px) rotateZ(-45.6835deg);
+        animation-timing-function: ease-in-out;
+    }
+    61.8182% {
+        transform: translate3d(17px, 9px, 0px) rotateZ(20.8855deg);
+        animation-timing-function: ease-in-out;
+    }
+    72.7273% {
+        transform: translate3d(17px, 9px, 0px) rotateZ(10.8217deg);
+        animation-timing-function: ease-in-out;
+    }
+    79.0909% {
+        transform: translate3d(2px, 7px, 0px) rotateZ(21.399deg);
+        animation-timing-function: ease-in-out;
+    }
+    86.3636% {
+        transform: translate3d(-6px, 12px, 0px) rotateZ(-33.3895deg);
+        animation-timing-function: ease-in-out;
+    }
+    92.7273% {
+        transform: translate3d(-21px, 3px, 0px) rotateZ(-61.5579deg);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: translate3d(-21px, 3px, 0px) rotateZ(-61.5579deg);
+        animation-timing-function: linear;
+    }
+}
+.object-div-11uq .right-hand-animation {
+    animation: right-hand-animation-keyframes 5.5s linear 0s infinite normal forwards;
+}
+@keyframes coin-animation-keyframes {
+    0% {
+        width: 58px;
+        transform: rotateZ(0deg) scale3d(0.14, 0.14, 0.14);
+        opacity: 0;
+        height: 73px;
+        animation-timing-function: linear;
+    }
+    16.3636% {
+        width: 58px;
+        transform: rotateZ(0deg) scale3d(0.14, 0.14, 0.14);
+        opacity: 0;
+        height: 73px;
+        animation-timing-function: linear;
+    }
+    18.1818% {
+        width: 58px;
+        transform: rotateZ(0deg) scale3d(0.14, 0.14, 0.14);
+        opacity: 1;
+        height: 73px;
+        animation-timing-function: linear;
+    }
+    21.8182% {
+        width: 58px;
+        transform: rotateZ(0deg) scale3d(1, 1, 1);
+        opacity: 1;
+        height: 73px;
+        animation-timing-function: ease-in;
+    }
+    25.4545% {
+        width: 58px;
+        transform: rotateZ(0deg) scale3d(0.93, 0.93, 0.93);
+        opacity: 1;
+        height: 73px;
+        animation-timing-function: ease-out;
+    }
+    29.0909% {
+        width: 58px;
+        transform: rotateZ(0deg) scale3d(1, 1, 1);
+        opacity: 1;
+        height: 73px;
+        animation-timing-function: linear;
+    }
+    30.9091% {
+        width: 58px;
+        transform: rotateZ(-20.5849deg) scale3d(1, 1, 1);
+        opacity: 1;
+        height: 65px;
+        animation-timing-function: linear;
+    }
+    32.7273% {
+        width: 58px;
+        transform: rotateZ(-6.05087deg) scale3d(1, 1, 1);
+        opacity: 1;
+        height: 32px;
+        animation-timing-function: linear;
+    }
+    34.5455% {
+        width: 58px;
+        transform: rotateZ(-20.5323deg) scale3d(1, 1, 1);
+        opacity: 0;
+        height: 0px;
+        animation-timing-function: linear;
+    }
+    100% {
+        width: 58px;
+        transform: rotateZ(-20.5323deg) scale3d(1, 1, 1);
+        opacity: 0;
+        height: 0px;
+        animation-timing-function: linear;
+    }
+}
+.object-div-11uq .coin-animation {
+    animation: coin-animation-keyframes 5.5s linear 0s infinite normal forwards;
+}
+.object-div-11uq {
+    position: absolute;
+    width: 419.727px;
+    height: 365.713px;
+    left: 50%;
+    transform-style: preserve-3d;
+    top: 50%;
+    transform: translate3d(-210px, -183px, 0px);
+}
+.logo {
+    height: 56.9904px;
+    width: 199.988px;
+    transform-origin: 100.03px 28.7325px 0px;
+    left: 125px;
+    top: 367px;
+}
+.object-div-11uq .object-motion-path-1ycm-anim-x {
+    animation: object-motion-path-1ycm-keys-x 5.5s linear 0s infinite normal forwards;
+    transform: translate3d(0px, 0px, 0px);
+}
+@keyframes object-motion-path-1ycm-keys-x {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    9.09% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.5691, 0.0024, 0.5771, 0.8928);
+    }
+    21.82% {
+        transform: translate3d(-21px, 0px, 0px);
+    }
+    29.09% {
+        transform: translate3d(-21px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.4671, 0.0446, 0.5329, 0.9554);
+    }
+    34.55% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    50.91% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    61.82% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    72.73% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    79.09% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+.object-div-11uq .object-motion-path-1ycm-anim-y {
+    animation: object-motion-path-1ycm-keys-y 5.5s linear 0s infinite normal forwards;
+    transform: translate3d(0px, 0px, 0px);
+}
+@keyframes object-motion-path-1ycm-keys-y {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    9.09% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.4672, 0.0685, 0.4684, 0.9955);
+    }
+    21.82% {
+        transform: translate3d(0px, -31px, 0px);
+    }
+    29.09% {
+        transform: translate3d(0px, -31px, 0px);
+        animation-timing-function: cubic-bezier(0.4671, 0.0446, 0.5329, 0.9554);
+    }
+    34.55% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    50.91% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    61.82% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    72.73% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    79.09% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+.object-div-11uq .object-motion-path-vy7l-anim-x {
+    animation: object-motion-path-vy7l-keys-x 5.5s linear 0s infinite normal forwards;
+    transform: translate3d(0px, 0px, 0px);
+}
+@keyframes object-motion-path-vy7l-keys-x {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    16.36% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    18.18% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    21.82% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    25.45% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    29.09% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.2686, 0.386, 0.5892, 0.7606);
+    }
+    30.91% {
+        transform: translate3d(-12.82px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.1227, 0.4002, 0.5085, 1.704);
+    }
+    32.73% {
+        transform: translate3d(-15px, 0px, 0px);
+        animation-timing-function: cubic-bezier(0.4509, 0.1647, 0.7627, 0.6039);
+    }
+    34.55% {
+        transform: translate3d(-6px, 0px, 0px);
+    }
+    100% {
+        transform: translate3d(-6px, 0px, 0px);
+    }
+}
+.object-div-11uq .object-motion-path-vy7l-anim-y {
+    animation: object-motion-path-vy7l-keys-y 5.5s linear 0s infinite normal forwards;
+    transform: translate3d(0px, 0px, 0px);
+}
+@keyframes object-motion-path-vy7l-keys-y {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    16.36% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    18.18% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    21.82% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    25.45% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    29.09% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    30.91% {
+        transform: translate3d(0px, 37.27px, 0px);
+    }
+    32.73% {
+        transform: translate3d(0px, 76.65px, 0px);
+    }
+    34.55% {
+        transform: translate3d(0px, 115px, 0px);
+    }
+    100% {
+        transform: translate3d(0px, 115px, 0px);
+    }
+}
+[data-object-motion-path-node] {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    pointer-events: none;
+}

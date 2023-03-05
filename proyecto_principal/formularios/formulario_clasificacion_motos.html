@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Fonts and icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Material Dashboard CSS -->
+  <link rel="stylesheet" href="material-dashboard.css">
+  <style type="text/css">
+.boton {
+    padding: 14px 25px;
+    background: #FF9100;
+    border: 1px solid #1161B0;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration:none;
+}
+  </style>
+  
+    <title>Registro de Clasificación de Motos</title>
+</head>
+<body>
+
+  <body class="dark-edition">
+  <center>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header card-header-text card-header-success">
+          <div class="card-text">
+            <h4 class="card-title">Formulario Clasificación de Usuarios</h4>
+          </div>
+        </div>
+        <br>
+        <div class="card-body">
+        <form class="was-validated"method="POST" action="registro_clasificacion_nuevas_motos.php">
+          <form class="was-validated">
+          <form class="needs-validation" novalidate>
+          <div class="form-group">
+            <div class="form-group mb-2">
+              <input type="text" class="form-control" id="validationCustom01" id="datos" name="txtclasificacionmotos" value="" required minlength="1"
+                maxlength="150" pattern="[a-zA-Z0-9,. ]*$+" name="txtcapacidadtanque">
+              <div class="valid-feedback">
+                ¡Campo Ok!
+              </div>
+              <div class="invalid-feedback">
+                ¡Corregir Campo!
+              </div>
+            </div>
+          <div class="form-row">
+          <div class="col-md-6 mb-3">
+          <button class="btn btn-success" type="submit">Nueva Clasificacion Motos</button>
+          </div>
+          <div class="col-md-6 mb-3">
+          <a href="/material1/template.php" class="boton">Regresar</a>
+          </div>
+          </div>    
+          
+        </form>
+        
+      </div>
+    </center>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+</body>
+</html>

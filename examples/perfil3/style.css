@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+::selection {
+  background: #272838;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right, #212122, #232d57);
+}
+
+.wrapper {
+  max-width: 600px;
+  position: relative;
+  background: linear-gradient(to left, #306BAC, #141B41);
+  color: #fff;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 80px 1px #212129;
+}
+.wrapper .image-wrapper img {
+  width: 225px;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrapper .name {
+  font-size: 2.2em;
+}
+.wrapper .description {
+  color: #A1A2AD;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.wrapper .social-media a i {
+  color: #fff;
+  font-size: 2em;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 15px;
+  transition: 300ms;
+}
+.wrapper .social-media a i:hover {
+  color: #A1A2AD;
+  transition: 300ms;
+}
+.wrapper .follow {
+  background: #fff;
+  color: #212129;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  padding: 10px 45px;
+  border-radius: 30px;
+  transition: 300ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrapper .follow:hover {
+  background: #212129;
+  color: #fff;
+  transition: 300ms;
+}
+.wrapper .follow .fa-twitter {
+  margin-right: 5px;
+  margin-top: 15px;
+}
+

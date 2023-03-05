@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Motos Cruiser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="estilos.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Fonts and icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Material Dashboard CSS -->
+  <link rel="stylesheet" href="material-dashboard.css">
+  <style type="text/css">
+.boton {
+    padding: 14px 25px;
+    background: #FF9100;
+    border: 1px solid #1161B0;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration:none;
+}
+  </style>
+</head>
+<body>
+
+  <body class="dark-edition">
+    <center>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header card-header-text card-header-success">
+            <div class="card-text">
+              <h4 class="card-title">Formulario Motos Cruiser</h4>
+            </div>
+          </div>
+          <br>
+          <div class="card-body">
+            <form class="was-validated" method="POST" action="registro_motos_cruiser.php">
+              <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01" class="md-label-floating">Referencia</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                      maxlength="150" pattern="^[a-zA-Z ]+" name="txtreferencia">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Color</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required minlength="1"
+                      maxlength="150" pattern="[a-zA-Z ]+" name="txtcolor">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01" class="titulo1">Modelo</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                      maxlength="150" pattern="[0-9 ]+" name="txtmodelo">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Marca</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required minlength="1"
+                      maxlength="150" pattern="[a-zA-Z ]+" name="txtmarca">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01" class="titulo1">Cantidad</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                      maxlength="150" pattern="[0-9 ]+" name="txtcantidad">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Precio</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required minlength="1"
+                      maxlength="150" pattern="[0-9 ]+" name="txtprecio">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="validationCustom01" class="titulo1">Cilindraje</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                    maxlength="150" pattern="[0-9,. ]+" name="txtcilindraje">
+                  <div class="valid-feedback">
+                    ¡Campo Ok!
+                  </div>
+                  <div class="invalid-feedback">
+                    ¡Corregir Campo!
+                  </div>
+                </div>
+                <div class="form-group" class>
+                  <label for="exampleFormControlSelect1">Clasificación de Motos</label>
+                  <select class="custom-select" required name="txtclasificacionmotos">
+                    <option name="idclasificaciondemotos" value="">Seleccionar Moto</option>
+                    <option name="idclasificaciondemotos" value="5">Cruiser</option>
+                  </select>
+                  <div class="invalid-feedback">Moto no seleccionada</div>
+                </div>
+                <br>
+
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01" class="titulo1">Motor</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                      maxlength="150" pattern="[a-zA-Z0-9,. ]$+" name="txtmotor">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Potencia Maxima</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required minlength="1"
+                      maxlength="150" pattern="[a-zA-Z-0-9,. ]$+" name="txtpotenciamaxima">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!s
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01" class="titulo1">Torque</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                      maxlength="150" pattern="[a-zA-Z0-9,. ]+$" name="txttorque">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Largo</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required minlength="1"
+                      maxlength="150" pattern="[0-9,. ]+" name="txtlargo">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01" class="titulo1">Ancho</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                      maxlength="150" pattern="[0-9,. ]+" name="txtancho">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Altura</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required minlength="1"
+                      maxlength="150" pattern="[0-9,. ]+" name="txtaltura">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01" class="titulo1">Distancia Ejes</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                      maxlength="150" pattern="[0-9,. ]+" name="txtdistanciaejes">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!s
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Distancia Piso</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required minlength="1"
+                      maxlength="150" pattern="[0-9,. ]+" name="txtdistanciapiso">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01" class="titulo1">Altura Asiento</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                      maxlength="150" pattern="[0-9,. ]+" name="txtalturaasiento">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Peso Seco</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required minlength="1"
+                      maxlength="150" pattern="[0-9,. ]+" name="txtpesoseco">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-2">
+                  <label for="validationCustom01" class="titulo1">Capacidad Tanque</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                    maxlength="150" pattern="[a-zA-Z0-9,. ]*$+" name="txtcapacidadtanque">
+                  <div class="valid-feedback">
+                    ¡Campo Ok!
+                  </div>
+                  <div class="invalid-feedback">
+                    ¡Corregir Campo!
+                  </div>
+                </div>
+                <br>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01" class="titulo1">Suspension Frontal</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                      maxlength="150" pattern="[a-zA-Z- ]+" name="txtsuspensionfrontal">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Suspension Trasera</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required minlength="1"
+                      maxlength="150" pattern="[a-zA-Z- ]+" name="txtsuspensiontrasera">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01" class="titulo1">Freno Trasero</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                      maxlength="150" pattern="[a-zA-Z- ]+" name="txtfrenotrasero">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Freno Delantero</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required minlength="1"
+                      maxlength="150" pattern="[a-zA-Z- ]+" name="txtfrenodelantero">
+                    <div class="valid-feedback">
+                      ¡Campo Ok!
+                    </div>
+                    <div class="invalid-feedback">
+                      ¡Corregir Campo!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-2">
+                  <label for="validationCustom01" class="titulo1">Bateria</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="" required minlength="1"
+                    maxlength="150" pattern="[a-zA-Z0-9,. ]+" name="txtbateria">
+                  <div class="valid-feedback">
+                    ¡Campo Ok!
+                  </div>
+                  <div class="invalid-feedback">
+                    ¡Corregir Campo!
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    </label>
+                    <div class="invalid-feedback">
+                      Debes estar de acuerdo antes de enviar
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                  <button class="btn btn-success" type="submit">Registrar</button>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                  <a href="/material1/template.php" class="boton">Regresar</a>
+                  </div>
+                </div>   
+              </form>
+          </div>
+        </div>
+      </div>
+    </center>
+  </body>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="colores.css">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+  </center>
+
+</body>
+
+</html>

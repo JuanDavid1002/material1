@@ -1,0 +1,291 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+html {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body:before,
+#app:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 35vw;
+  background: #b93131;
+}
+
+body:before {
+  background: #b93131;
+}
+
+#app {
+  background: #fff;
+  width: 90vw;
+  height: 70vh;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 3rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.ui-header {
+  grid-row: 1/2;
+  align-self: end;
+}
+
+.ui-heading {
+  margin: 0;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.ui-subheading {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #aaa;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.1rem;
+}
+
+.ui-heading,
+.ui-subheading,
+.ui-nav > a {
+  -webkit-animation: slide-left 2.5s cubic-bezier(0, 1, 0.2, 1) both, fade-in 0.6s linear both;
+          animation: slide-left 2.5s cubic-bezier(0, 1, 0.2, 1) both, fade-in 0.6s linear both;
+}
+
+.ui-nav > a:nth-child(3) {
+  -webkit-animation-delay: 0.2s, 0.2s;
+          animation-delay: 0.2s, 0.2s;
+}
+
+.ui-nav > a:nth-child(2) {
+  -webkit-animation-delay: 0.4s, 0.4s;
+          animation-delay: 0.4s, 0.4s;
+}
+
+.ui-nav > a:nth-child(1) {
+  -webkit-animation-delay: 0.6s, 0.6s;
+          animation-delay: 0.6s, 0.6s;
+}
+
+.ui-nav > a:nth-child(0) {
+  -webkit-animation-delay: 0.8s, 0.8s;
+          animation-delay: 0.8s, 0.8s;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slide-left {
+  from {
+    transform: translateX(-2rem);
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(-2rem);
+  }
+}
+.ui-nav > a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+}
+.ui-nav > a ~ a {
+  opacity: 0.3;
+}
+
+.video-tile,
+.video-toggle {
+  position: absolute;
+}
+
+.video-tile {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.4s linear;
+}
+.video-tile video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.video-tile.-first {
+  left: 30%;
+  bottom: 10%;
+  width: 50%;
+  -webkit-animation: video-tile-enter 2.5s cubic-bezier(0, 1, 0.2, 1) backwards;
+          animation: video-tile-enter 2.5s cubic-bezier(0, 1, 0.2, 1) backwards;
+}
+
+.video-tile.-second {
+  right: 5%;
+  top: 10%;
+  width: 30%;
+  -webkit-animation: video-tile-enter 3s cubic-bezier(0, 1, 0.1, 1) backwards;
+          animation: video-tile-enter 3s cubic-bezier(0, 1, 0.1, 1) backwards;
+}
+
+@-webkit-keyframes video-tile-enter {
+  from {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(30%) rotateY(20deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes video-tile-enter {
+  from {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(30%) rotateY(20deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.video-tile img {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+  display: block;
+}
+
+.video-tile:hover,
+.video-tile:focus {
+  z-index: 2;
+}
+.video-tile:hover img,
+.video-tile:focus img {
+  opacity: 0;
+}
+
+.video-toggle {
+  overflow: hidden;
+  transform: translate(calc(50% - 5rem), calc(50% - 5rem));
+  z-index: 9;
+  visibility: hidden;
+  cursor: pointer;
+}
+.video-toggle,
+.video-toggle .video-toggle-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s cubic-bezier(0.6, 0, 0.4, 1);
+}
+.video-toggle .video-toggle-inner {
+  transform: translate(calc(-100% + 10rem), calc(-100% + 10rem));
+}
+.video-toggle .video-toggle-inner:before {
+  pointer-events: auto;
+  content: "▶";
+  height: 10rem;
+  width: 10rem;
+  border: solid 1px white;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  background-color: white;
+  color: #b93131;
+  text-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s linear 0.3s;
+  visibility: visible;
+}
+.video-toggle video {
+  transform: translate(calc(-50% + 15rem), calc(-50% + 10rem));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: initial;
+  width: auto;
+  transition: inherit;
+  visibility: visible;
+}
+.video-toggle.active {
+  pointer-events: auto;
+}
+.video-toggle.active,
+.video-toggle.active .video-toggle-inner {
+  transform: none;
+}
+.video-toggle.active .video-toggle-inner:before {
+  opacity: 0;
+  transition-delay: 0s;
+}
+.video-toggle.active video {
+  transform: translate(-50%, -50%);
+}
+
+video,
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ui-nav {
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+}
+.ui-nav > * {
+  line-height: 1.5;
+}
